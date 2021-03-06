@@ -1,36 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\CarLocator\\CarLocator\\CarLocator.Api\\CarLocator.Api\\CarLocator.Api.csproj": {}
+    "C:\\dev\\vehicle-locator\\CarLocator.Api\\CarLocator.Api.csproj": {}
   },
   "projects": {
-    "C:\\projects\\CarLocator\\CarLocator\\CarLocator.Api\\CarLocator.Api\\CarLocator.Api.csproj": {
+    "C:\\dev\\vehicle-locator\\CarLocator.Api\\CarLocator.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\CarLocator\\CarLocator\\CarLocator.Api\\CarLocator.Api\\CarLocator.Api.csproj",
+        "projectUniqueName": "C:\\dev\\vehicle-locator\\CarLocator.Api\\CarLocator.Api.csproj",
         "projectName": "CarLocator.Api",
-        "projectPath": "C:\\projects\\CarLocator\\CarLocator\\CarLocator.Api\\CarLocator.Api\\CarLocator.Api.csproj",
-        "packagesPath": "C:\\Users\\Dawid\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\CarLocator\\CarLocator\\CarLocator.Api\\CarLocator.Api\\obj\\",
+        "projectPath": "C:\\dev\\vehicle-locator\\CarLocator.Api\\CarLocator.Api.csproj",
+        "packagesPath": "C:\\Users\\dady\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\vehicle-locator\\CarLocator.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dawid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dady\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.hangfire.io/nuget/hangfire-pro/v3/index.json": {},
+          "https://pkgs.dev.azure.com/Phlexglobal/_packaging/Phlexglobal/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -41,7 +44,20 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -60,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
