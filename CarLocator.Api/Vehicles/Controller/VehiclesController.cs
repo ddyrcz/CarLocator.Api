@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using CarLocator.Api.Infrastructure;
 using CarLocator.Api.Vehicles.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarLocator.Api.Vehicles.Controller
 {
@@ -15,6 +18,13 @@ namespace CarLocator.Api.Vehicles.Controller
         public VehiclesController(VehicleLocatorDbContext dbContext)
         {
             _dbContext = dbContext;
+        }
+
+        public async Task<List<Vehicle>> GetAll()
+        {
+            var vehicles = await _dbContext.Vehicles.ToListAsync();
+
+            return vehicles;
         }
 
         [HttpGet("{id}")]
